@@ -2,6 +2,7 @@ from .position import Position
 
 
 class Rover(object):
+    """Mars Rover object and also the various attributes of the Mars Rover"""
     # Available commands key values
     AVAILABLE_COMMANDS = {
         'M': 'move',

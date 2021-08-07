@@ -1,5 +1,5 @@
 class Position:
-    """Mars Rover position"""
+    """Mars Rover position on a cartisian plane(plateau)"""
     x = 0
     y = 0
 

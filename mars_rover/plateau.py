@@ -1,8 +1,10 @@
 class Plateau(object):
+    """Mars Plateau object"""
     MIN_WIDTH = 0
     MIN_HEIGHT = 0
 
     def __init__(self, width, height, min_width=0, min_height=0):
+        """Initializing the various attributes of the plateau"""
         self.width = width
         self.height = height
         self.MIN_WIDTH = min_width
