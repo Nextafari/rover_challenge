@@ -59,10 +59,12 @@ class Rover(object):
         return direction
 
     def process(self, commands):
+        """Process NASA commands before running"""
         for i in range(len(commands)):
             self.run_command(commands[i])
 
     def run_command(self, command):
+        """Run NASA commands to spin left, right, or to move"""
         if 'L' == command:
             self.turn_left()
         elif 'R' == command:
@@ -74,6 +76,7 @@ class Rover(object):
             print("Wrong parameters!..")
 
     def move(self):
+        """Moves the rover according to its position on the plane"""
         if not self.plateau.move_available(self.position):
             return False
         # Assume that the square directly North from (x, y) is (x, y+1).
