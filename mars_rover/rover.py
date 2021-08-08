@@ -92,7 +92,9 @@ class Rover(object):
         return True
 
     def turn_left(self):
+        """Spins the rover to the left without moving it"""
         self.heading = self.DIRECTIONS['W'] if (self.heading - 1) < self.DIRECTIONS['N'] else self.heading - 1
 
     def turn_right(self):
+        """Spins the rover to the right without moving it"""
         self.heading = self.DIRECTIONS['N'] if (self.heading + 1) > self.DIRECTIONS['W'] else self.heading + 1
